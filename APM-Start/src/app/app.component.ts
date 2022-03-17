@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'pm-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector:"pm-root",
+  template: `<div style="text-align:center">
+  <h1>
+    Welcome to {{pageTitle}}!!
+  </h1>
+  ... Starter Files ...
+</div>`
 })
-export class AppComponent {
-  title = 'Angular: Getting Started';
+export class AppComponent{
+  pageTitle: string = "somethoing";
 }
